@@ -1,0 +1,16 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #f4f6fb;
+}
+
+.container {
+  max-width: 980px;
+  margin: 32px auto;
+  padding: 16px;
+}

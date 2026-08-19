@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "TrustLens Extension",
+  "version": "0.1",
+  "description": "Shows trust information about the current site",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "TrustLens"
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
